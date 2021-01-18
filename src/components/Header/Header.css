@@ -1,0 +1,16 @@
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.appName {
+    left: 40.5%;
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+}
+
+.footballIcon {
+    left: 1%;
+    color: white;
+}

@@ -1,0 +1,19 @@
+thead {
+    text-align: center;
+}
+
+td {
+     text-align: center;
+ }
+
+.sortable {
+    cursor: pointer;
+}
+.alignFilter {
+    left: 1%;
+}
+.exportButton {
+    background-color: green !important;
+    left: 32%;
+    transform: translateY(20%);
+}
