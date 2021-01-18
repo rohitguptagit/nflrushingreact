@@ -6,18 +6,14 @@ td {
      text-align: center;
  }
 
-a { 
-    color: white; 
-} 
-
 .sortable {
     cursor: pointer;
 }
 .alignFilter {
-    left: 550px;
+    left: 1%;
 }
 .exportButton {
     background-color: green !important;
-    left: 50px;
-    top: 10px;
+    left: 32%;
+    transform: translateY(20%);
 }

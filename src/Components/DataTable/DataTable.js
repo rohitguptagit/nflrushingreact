@@ -5,7 +5,7 @@ import Table from 'react-bootstrap/Table';
 import './DataTable.css'
 
 import TextField from '@material-ui/core/TextField';
-import { makeStyles } from '@material-ui/core/styles';
+import Container from '@material-ui/core/Container';
 import Button from '@material-ui/core/Button';
 import SaveAltIcon from '@material-ui/icons/SaveAlt';
 
@@ -39,24 +39,25 @@ class DataTable extends Component {
     )
     return (
       <div>
-        <CSVLink data={filteredData} filename="Rushing_Yards_Data_Export.csv">
-          <Button
-            variant="contained"
-            color="primary"
-            size="medium"
-            className="exportButton"
-            startIcon={<SaveAltIcon />}
-          >
-            Export as CSV
-      </Button>
-        </CSVLink>
-        <TextField
-          onChange={this.setFilter}
-          className="alignFilter"
-          id="outlined-basic"
-          label="Filter by Player Name:"
-          variant="outlined"
-        />
+        <Container maxWidth={false}>
+          <TextField
+            onChange={this.setFilter}
+            className="alignFilter"
+            id="outlined-basic"
+            label="Search Player:"
+            variant="outlined"
+          />
+          <CSVLink data={filteredData} filename="Rushing_Yards_Data_Export.csv">
+            <Button
+              variant="contained"
+              color="primary"
+              size="medium"
+              className="exportButton"
+              startIcon={<SaveAltIcon />}
+            > Export as CSV
+            </Button>
+          </CSVLink>
+        </Container>
         <br />
         <br />
         <Table responsive striped bordered hover variant="dark">
