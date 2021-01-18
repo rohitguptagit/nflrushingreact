@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Header from './components/Header/Header'
-import DataTable from './components/DataTable/DataTable'
+import Header from './Components/Header/Header'
+import DataTable from './Components/DataTable/DataTable'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import rushingData from './rushing.json';
 
