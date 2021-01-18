@@ -9,7 +9,7 @@ import SportsFootballIcon from '@material-ui/icons/SportsFootball';
 export default function Header() {
   return (
     <Navbar className="navbar-container" bg="dark" variant="dark">
-      <SportsFootballIcon fontSize="large" className="footballIcon" />
+      <SportsFootballIcon fontSize="large" className="footballIcon" data-testid="footballIcon-test"/>
       <Navbar.Brand className="appName"><b>NFL Rushing Yards App</b></Navbar.Brand>
     </Navbar>
   )

@@ -41,6 +41,7 @@ class DataTable extends Component {
       <div>
         <Container maxWidth={false}>
           <TextField
+            data-testid="filterBox-test"
             onChange={this.setFilter}
             className="alignFilter"
             id="outlined-basic"
@@ -49,6 +50,7 @@ class DataTable extends Component {
           />
           <CSVLink data={filteredData} filename="Rushing_Yards_Data_Export.csv">
             <Button
+              data-testid="exportButton-test"
               variant="contained"
               color="primary"
               size="medium"
@@ -60,7 +62,7 @@ class DataTable extends Component {
         </Container>
         <br />
         <br />
-        <Table responsive striped bordered hover variant="dark">
+        <Table responsive striped bordered hover variant="dark" data-testid="dataTable-test">
           <thead>
             <tr>
               <th>Player</th>
@@ -87,9 +89,9 @@ class DataTable extends Component {
             </tr>
           </thead>
           {
-            filteredData.map(rushingData => {
+            filteredData.map((rushingData, i) => {
               return (
-                <tbody>
+                <tbody key={i}>
                   <tr>
                     <td>{rushingData['Player']}</td>
                     <td>{rushingData['Team']}</td>
