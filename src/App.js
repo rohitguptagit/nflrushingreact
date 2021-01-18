@@ -13,7 +13,8 @@ class App extends Component {
         yds: 'desc',
         TD: 'desc',
         Lng: 'desc'
-      }
+      },
+      filter: ''
     }
 
     this.sortBy = this.sortBy.bind(this);
@@ -21,7 +22,6 @@ class App extends Component {
   }
 
   sortBy(key) {
-
     this.setState({
       data: rushingData.sort( (a, b) => 
         this.state.direction[key] === 'desc'
@@ -37,7 +37,7 @@ class App extends Component {
   }
 
   convertToInteger(str) {
-    var res = str;
+    let res = str;
 
     if (typeof str === 'string') {
       if(str.charAt(str.length - 1) === 'T') res = str.substring(0,str.length-1)
@@ -53,7 +53,7 @@ class App extends Component {
         <Header />
         <br />
         <br />
-        <DataTable data={this.state.data} sortBy={this.sortBy}/>
+        <DataTable data={this.state.data} sortBy={this.sortBy} filter={this.state.filter}/>
       </div>
     )
   }

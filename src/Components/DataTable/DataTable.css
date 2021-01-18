@@ -13,3 +13,6 @@ a {
 .sortable {
     cursor: pointer;
 }
+.alignFilter {
+    transform: translateX(45px);
+}
