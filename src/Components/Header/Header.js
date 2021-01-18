@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
 
-class Header extends Component {
-  render() {
+export default function Header() {
     return (
       <Navbar bg="dark" variant="dark">
         <Navbar.Brand href="#">NFL Rushing Yards App</Navbar.Brand>
@@ -11,7 +10,4 @@ class Header extends Component {
         </Nav>
       </Navbar>
     )
-  }
 }
-
-export default Header;

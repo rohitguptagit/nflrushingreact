@@ -9,3 +9,7 @@ td {
 a { 
     color: white; 
 } 
+
+.sortable {
+    cursor: pointer;
+}
