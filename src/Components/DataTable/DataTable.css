@@ -14,5 +14,10 @@ a {
     cursor: pointer;
 }
 .alignFilter {
-    transform: translateX(45px);
+    left: 550px;
+}
+.exportButton {
+    background-color: green !important;
+    left: 50px;
+    top: 10px;
 }

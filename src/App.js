@@ -13,8 +13,7 @@ class App extends Component {
         yds: 'desc',
         TD: 'desc',
         Lng: 'desc'
-      },
-      filter: ''
+      }
     }
 
     this.sortBy = this.sortBy.bind(this);
@@ -53,7 +52,7 @@ class App extends Component {
         <Header />
         <br />
         <br />
-        <DataTable data={this.state.data} sortBy={this.sortBy} filter={this.state.filter}/>
+        <DataTable data={this.state.data} sortBy={this.sortBy}/>
       </div>
     )
   }

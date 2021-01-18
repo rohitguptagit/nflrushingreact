@@ -1,3 +1,7 @@
 .alignCenter {
-    align-items: center;
+    transform: translateX(658px);
+}
+
+.footballIcon {
+    color: white;
 }
