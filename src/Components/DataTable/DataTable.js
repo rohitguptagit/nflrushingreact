@@ -25,6 +25,7 @@ class DataTable extends Component {
     this.setFilter = this.setFilter.bind(this);
   }
 
+  // This method sets the component's filter state to that found in the input box (onChange).
   setFilter(e) {
     this.setState({
       filter: e.target.value
@@ -32,6 +33,8 @@ class DataTable extends Component {
   }
 
   render() {
+    // Assigns the filtered data to this variable if a (partial) 
+    // player name is recognized in the list of players.
     let filteredData = this.props.data.filter(
       (rushingData) => {
         return rushingData.Player.toLowerCase().trim().indexOf(this.state.filter.toLowerCase().trim()) > -1;
@@ -40,6 +43,7 @@ class DataTable extends Component {
     return (
       <div>
         <Container maxWidth={false}>
+          {/* Filter box to be rendered on the page. */}
           <TextField
             data-testid="filterBox-test"
             onChange={this.setFilter}
@@ -48,7 +52,9 @@ class DataTable extends Component {
             label="Search Player:"
             variant="outlined"
           />
+          {/* Ensures that the filtered data set can be downloaded as a CSV file from the page. */}
           <CSVLink data={filteredData} filename="Rushing_Yards_Data_Export.csv">
+            {/* CSV Export button to be rendered on the page. */}
             <Button
               data-testid="exportButton-test"
               variant="contained"
@@ -62,6 +68,7 @@ class DataTable extends Component {
         </Container>
         <br />
         <br />
+        {/* Complete and populated data table to be rendered on the page. */}
         <Table responsive striped bordered hover variant="dark" data-testid="dataTable-test">
           <thead>
             <tr>
@@ -88,6 +95,7 @@ class DataTable extends Component {
               <th>FUM</th>
             </tr>
           </thead>
+          {/* Maps the filtered data set to the table rows iteratively. */}
           {
             filteredData.map((rushingData, i) => {
               return (

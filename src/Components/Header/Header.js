@@ -6,6 +6,7 @@ import './Header.css'
 
 import SportsFootballIcon from '@material-ui/icons/SportsFootball';
 
+// Header (Navbar) responsible for displaying application title and logo.
 export default function Header() {
   return (
     <Navbar className="navbar-container" bg="dark" variant="dark">
