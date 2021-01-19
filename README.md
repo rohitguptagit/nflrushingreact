@@ -55,7 +55,7 @@ If you have any questions regarding requirements, do not hesitate to email your 
 
 ### Installation and running this solution
 1. Clone my solution repository using the command `git clone https://github.com/rohitguptagit/nflrushingreact.git` to a desired directory.
-2. Open the folder in any IDE and use the IDE/Terminal to `cd` to `rushing-yards`.
+2. Open the folder in any IDE and use the IDE/Terminal to `cd` to `rushing-yards` (if you're not in that directory already).
 3. Execute `npm install` to ensure all relevant node packages are installed.
 4. Use the command `npm test` to ensure all tests are executing properly. You may have to press `a` when prompted to be able to execute all tests.
 5. `^C` out of the test session (or open another terminal and circle back to the `rushing-yards` directory) and execute the command `npm start` to start the development server.
