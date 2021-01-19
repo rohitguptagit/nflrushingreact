@@ -60,9 +60,9 @@ If you have any questions regarding requirements, do not hesitate to email your 
 4. Use the command `npm test` to ensure all tests are executing properly. You may have to press `a` when prompted to be able to execute all tests.
 5. `^C` out of the test session (or open another terminal and circle back to the `rushing-yards` directory) and execute the command `npm start` to start the development server.
 6. Observe the magic that is my NFL Rushing Yards Application!
-7. Click on the `Yds`, `TD`, or `LNG` table headings to sort the data table by each respective value.
-8. Use the filter box on the top left of the screen to filter the table data by Player name.
-9. Use the 'Export as CSV' button on the page to download any version of the table (this can be the original version, sorted version, filtered version, sorted AND filtered version).
-10. No 10th step - I just wanted to add a 10th step :)
+7. Click on the `Yds`, `TD`, or `LNG` table headings to sort the data table by each respective value in ascending order. Click it again to sort by descending order.
+8. Use the filter box on the top left of the screen to filter the table data by Player name (lowercase and uppercase can both be used).
+9. Use the 'Export as CSV' button on the page to download any version of the table (this can be the original version, sorted version, filtered version, or the sorted AND filtered version).
+10. No 10th step - I just wanted to add a 10th step 🙂
 
 Thank you for the opportunity and I hope you enjoy the application!
